@@ -1,5 +1,6 @@
 const btnAbrir = document.querySelector("#Abrir");
 const btnCerrar = document.querySelector("#Cerrar");
+const btnContinuacion = document.querySelector("#continuacion");
 
 //Abrir Carta
 btnAbrir.addEventListener("click", () => {
@@ -42,6 +43,10 @@ btnCerrar.addEventListener("click", () => {
     const IconoCorazon = document.querySelector(".bx");
     IconoCorazon.classList.remove("bx-rotada");
   }, 700);
+});
+
+btnContinuacion.addEventListener("click", () => {
+  window.location.href = "continuacion.html";
 });
 
 // Con click en la carta
